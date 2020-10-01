@@ -64,16 +64,15 @@ function submitForm() {
 						remainingLetters--;
 						guessedLetters++;
 					}
-					//attempts++;
 				} 
 			}
 			if (guessedLetters === 0) {
 				attempts--;
 			}
+			image.classList.remove(classImg);
 			classImg = 'number' + attempts;
-			console.log(classImg);
 			image.classList.add(classImg);
-			//attempts--;
+
 		}
 
 		pWord.textContent = answerArray.join(' ');
