@@ -72,10 +72,8 @@ input[type="text"] {
     width: 500px;
     height: 500px;
     background-image: url(../IMG/9.jpg);
+    border: 1px solid #cc6600;
 }
-
-
-
 
 
 .img.number8 {
