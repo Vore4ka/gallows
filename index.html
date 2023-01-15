@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Виселица</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Виселица</h1>
+		<div class="img"></div>
+		<p class="word"></p>
+		
+		<p class="description">Угадайте букву или нажмите Выйти для перезапуска игры. Попыток: <span class="attempt"></span></p> 
+
+		<form autocomplete="off">
+			
+			<input type="button" name="cancel" id="cancel" value="Выйти" onclick="cancelGame()">
+			<input type="text" name="guess" id="guess" maxlength="1" onkeydown="if(event.keyCode==13){return false;}">
+			<input type="button" name="submit" id="submit" value="Готово" onclick="submitForm()">
+
+		</form>
+
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
